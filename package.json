@@ -9,7 +9,8 @@
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "browserslist": "browserslist/browserslist",
-    "cssnano": "^4.1.10"
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.10"
   },
   "babel": {
     "presets": [

@@ -59,8 +59,9 @@ function initVideoCount() {
 }
 
 function addVideoProcessor(width) {
+  const videoNum = Math.floor(Math.random() * videos.length);
   const video = videos[Math.floor(Math.random() * videos.length)];
-  const processor = new VideoProcessor(video, width);
+  const processor = new VideoProcessor(video, width, videoNum);
   document
     .getElementById("area")
     .insertAdjacentElement("beforeend", processor.targetCanvas);
@@ -69,12 +70,13 @@ function addVideoProcessor(width) {
 }
 
 class VideoProcessor {
-  constructor(video, width) {
+  constructor(video, width, videoNum) {
     this.video = video;
     this.width = width;
     this.sourceCanvas = document.createElement("canvas");
     this.sourceContext = this.sourceCanvas.getContext("2d");
     this.targetCanvas = document.createElement("canvas");
+    this.targetCanvas.className = `person${videoNum} video`;
     this.targetContext = this.targetCanvas.getContext("2d");
   }
 
@@ -105,7 +107,7 @@ class VideoProcessor {
     const videoMult = 2.82;
     if (video.videoWidth < 1) return;
 
-    this.setDimensions();
+    //this.setDimensions();
     this.sourceContext.drawImage(
       video,
       0,
