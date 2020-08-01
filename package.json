@@ -1,0 +1,21 @@
+{
+  "name": "chromakey",
+  "version": "1.0.0",
+  "description": "ChromaKey Demo",
+  "main": "index.js",
+  "author": "igray@igraycon.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "browserslist": "browserslist/browserslist"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
