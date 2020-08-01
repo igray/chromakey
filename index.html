@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="all" />
+    <style>
+      div#controls,
+      div#area {
+        display: flex;
+      }
+      div#controls {
+        justify-content: space-evenly;
+      }
+      div#area {
+        flex-wrap: wrap;
+      }
+      div#videos {
+        height: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <select name="background">
+        <option value="#8B6E64">Color 0</option>
+        <option value="#B7A582">Color 1</option>
+        <option value="#D6BE71">Color 2</option>
+        <option value="#B58C66">Color 3</option>
+        <option value="#401C25">Color 4</option>
+        <option value="#DBCCA8">Color 5</option>
+        <option value="#9F7D8F">Color 6</option>
+        <option value="#9FBABA">Color 7</option>
+        <option value="#8784A5">Color 8</option>
+        <option value="#988475">Color 9</option>
+      </select>
+      <select name="count"> </select>
+    </div>
+    <div id="area"></div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
