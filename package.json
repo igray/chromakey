@@ -8,7 +8,8 @@
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
-    "browserslist": "browserslist/browserslist"
+    "browserslist": "browserslist/browserslist",
+    "cssnano": "^4.1.10"
   },
   "babel": {
     "presets": [
