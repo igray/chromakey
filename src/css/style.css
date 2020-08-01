@@ -1,0 +1,14 @@
+div#controls,
+div#area {
+  display: flex;
+}
+div#controls {
+  justify-content: space-evenly;
+}
+div#area {
+  flex-wrap: wrap;
+}
+div#videos {
+  height: 0;
+  overflow: hidden;
+}
