@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "igray@igraycon.com",
   "license": "MIT",
+  "scripts": {
+    "build": "parcel build index.html --public-url ./"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
